@@ -1,0 +1,17 @@
+<h1>Teacher#index</h1>
+<p>Find me in app/views/teacher/index.html.erb</p>
+<table>
+<thead>
+<th>
+<tr>TEACHER NAME</tr>
+<tr>SUBJECT</tr>
+</thead>
+<tbody>
+<%@teachers.each do |teacher|%>
+<th>
+<td><%=teacher.name%></td>
+<td><%=teacher.subject%></td>
+</th>
+<%end%>
+</tbody>
+</table>
